@@ -1,16 +1,56 @@
-Body{
+body{
   margin:25px;
-}
-.container{
-  margin:10px;
-  padding:10px;
+  height:100%;
+  background-color:rgb(19, 19, 20);
 
-  
 }
-.card,
+.form-group{
+font-size: auto;
+width: auto;
+
+}
+
+footer {
+  padding:10px;
+  background: #222;
+  color: #ccc;
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  text-align:center;
+}
+.qus{
+  text-align: center;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-top: 1px solid #935528;
+  color: #bd6b16;
+}
+
+
+.card__description {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px 0;
+  
+ 
+}
+
+.card{
+  width:50%;
+}
 .form-control
 {
-  width:40%;
+  width:50%;
 }
 .start {
   text-align:center;
@@ -101,23 +141,11 @@ Body{
   cursor: pointer;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    padding: 15px 100px;
-    background-color: rgba(134, 67, 23, 0.9);
-}
 submit {
   cursor: pointer;
 }
-.button {
+.button,
+.btn-warning {
   cursor: pointer;
   background: #BB6B24;
   color: #ffffff;
@@ -130,75 +158,8 @@ submit {
   max-width: 200px;
 }
 
-form {
-  display: flex;
-}
-
-/* .header a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-nav {
-  display: flex;
-}
-
-nav a {
-  padding: 10px;
-  background: #BB6B24;
-  margin-right: 5px;
-  cursor: pointer;
-}
-.contact form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 800px;
-    width: 80%;
-} */
-
-.contact form input {
-    padding: 15px;
-    flex: 1;
-    margin-right: 30px;
-    font-size: 18px;
-    color: #000;
-}
-
-section {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 100px;
-}
-
-.section-header {
-  color: #414a4f;
-    text-transform: capitalize;
-    font: bold 32px 'Open Sans', sans-serif;
-    margin-bottom: 0px;
-    text-align: center; 
-}
-
-section h3.title {
-    color: #414a4f;
-    text-transform: capitalize;
-    font: bold 32px 'Open Sans', sans-serif;
-    margin-bottom: 35px;
-    text-align: center;
-}
-
-section p {
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: 35px;
-    padding: 0 20px;
-    line-height: 2;
-}
-
 hr {
-    width: 150px;
+    width:80%;
     height: 2px;
     background-color: #6A2B05;
     border: 0;
@@ -247,28 +208,8 @@ img {
     flex: 1 1 auto;
 }
 
-.card__price {
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 5px 15px;
-    border-top: 1px solid #935528;
-    background-color: #bd6b16;
-}
 
 
-.card__description {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 15px 0;
-}
 
 .cardGroup__card {
     -ms-flex: 1 1 0%;
@@ -298,9 +239,4 @@ img {
 
 .price-table {
   padding: 10px 100px 50px;
-}
-footer {
-  padding: 10px 100px;
-  background: #222;
-  color: #ccc;
 }
