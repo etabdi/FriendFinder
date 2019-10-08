@@ -1,14 +1,18 @@
-# FriendFinderFriendFinder
-friendfinder
+# FriendFinder
 
 Project Description:
-Looking for a new friend? Use the Friend Finder to find new friends based on your answers to 10 survey questions. Once the user completes the survey they will be shown their closest match based on their responses.
 
-Technologies Used:
-HTML
-CSS/Bootstrap
-Javascript
-Node
-Express
+A full-stack site to find new friends based on your answers to 10 survey questions. It take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match. 
+
+
+
+      Technologies Used:
+      http
+      Express.js
+      Routing
+      Postman
+      HTTP POST requests
+      Express.static()
+
 Heroku Link:
-https://salty-earth-85105.herokuapp.com/
+https://morning-citadel-11800.herokuapp.com/
