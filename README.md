@@ -1,8 +1,5 @@
 # FriendFinder
 
-Project Description:
-
-## What Each Command Do
 
     
 [ Click here for demo video ](https://drive.google.com/file/d/1Q63T4ybRgZ4BSpWUKf3TyQb4Qn8uPRl8/view)
