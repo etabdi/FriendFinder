@@ -1,4 +1,4 @@
-# FriendFinder
+# Friend Finder
 
    ![Alt Text](https://github.com/etabdi/FriendFinder/blob/master/app/public/img/home.PNG)
       
