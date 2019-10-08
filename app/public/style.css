@@ -165,13 +165,10 @@ img {
   body{
     margin:25px;
     height:100%;
-    background-color:whitesmoke;
+    background-color:rgb(14, 1, 1);
   
   }
-  .navbar a {
-    float: none;
-    display: block;
-  }
+
   .card{
     padding: 0 20% 0 20%;
   }
