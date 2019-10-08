@@ -46,7 +46,7 @@ footer {
 }
 
 .card{
-  width:50%;
+  padding: 0 20% 0 20%;
 }
 .form-control
 {
@@ -63,87 +63,7 @@ footer {
    border-block-color:black;
 }
 
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-}
 
-@media (min-width: 1281px) {
-  
-
-  
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .header {
- flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px 80px;
-  }
-  .logo {
-    margin-bottom: 10px;
-  }
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  .header {
-   padding: 10px 80px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .logo {
-    margin-bottom: 10px;
-  }
-  
-}
-
-.nav-link {
-  cursor: pointer;
-}
-
-submit {
-  cursor: pointer;
-}
 .button,
 .btn-warning {
   cursor: pointer;
@@ -218,16 +138,17 @@ img {
     border-radius: 0;
 }
 
-.card {
+.card1 {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
+    -ms-flex-direction: columwn;
     flex-direction: column;
     border: 1px solid #935528;
     border-radius: 4px;
     overflow: hidden;
     text-align:left;
     margin: 15px;
+    width:50%;
 }
 
 .card__descriptionText {
@@ -239,4 +160,56 @@ img {
 
 .price-table {
   padding: 10px 100px 50px;
+}
+@media screen and (max-width: 600px) {
+  body{
+    margin:25px;
+    height:100%;
+    background-color:whitesmoke;
+  
+  }
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  .card{
+    padding: 0 20% 0 20%;
+  }
+
+  .card__description {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 0;
+    
+   
+  }
+  .qus{
+    text-align: center;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-top: 1px solid #935528;
+    color: #bd6b16;
+  }
+  
+  .card1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: columwn;
+    flex-direction: column;
+    border: 1px solid #935528;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align:left;
+    margin: 15px;
+    width:100%;
+}
+
 }
