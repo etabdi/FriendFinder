@@ -14,10 +14,6 @@ A full-stack site to find new friends based on user answers to 10 survey questio
       Javascript
       NODE JS   
       Express.js
-      Routing
-      Postman
-      HTTP POST requests
-      Express.static()
-
+    
 ## Heroku Link:
 https://morning-citadel-11800.herokuapp.com/
