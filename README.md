@@ -1,6 +1,6 @@
 # FriendFinder
 
-    ![Alt Text](https://github.com/etabdi/FriendFinder/blob/master/app/public/img/home.PNG)
+   ![Alt Text](https://github.com/etabdi/FriendFinder/blob/master/app/public/img/home.PNG)
       
 [ Click here for demo video ](https://drive.google.com/file/d/1ClhRcCXVW7_CVUcSSjWxf0e0Sr2sRs7E/view)
 
