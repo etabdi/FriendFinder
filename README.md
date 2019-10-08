@@ -10,7 +10,10 @@ A full-stack site to find new friends based on user answers to 10 survey questio
  ## TECHNOLOGIES USED
 
       
-      http
+      NODE JS
+      Javascript
+      Node package(NPM)
+      Request
       Express.js
       Routing
       Postman
