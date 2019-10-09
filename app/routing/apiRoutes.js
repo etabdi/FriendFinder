@@ -11,34 +11,34 @@ function apiRoutes(app) {
 
    
     module.exports = new_freind = {
-      name: req.body.name,
-      photo: req.body.photo,
-      scores: []
-    };
-    var scr_res = [];
-    for(var i=0; i < req.body.scores.length; i++){
+            name: req.body.name,
+            photo: req.body.photo,
+            scores: []
+          };
+          var scr_res = [];
+          for(var i=0; i < req.body.scores.length; i++){
 
-      scr_res.push( parseInt(req.body.scores[i]) )
+            scr_res.push( parseInt(req.body.scores[i]) )
 
-    }
-    new_freind.scores = scr_res;
+          }
+          new_freind.scores = scr_res;
 
-    var scores = [];
-    for(var i=0; i < friendsData.length; i++){
+          var scores = [];
+          for(var i=0; i < friendsData.length; i++){
 
-      var currentComparison = 0;
-      for(var j=0; j < new_freind.scores.length; j++){
-        currentComparison += Math.abs( new_freind.scores[j] - friendsData[i].scores[j] );
-      }
-      scores.push(currentComparison);
-    }
-    var bestMatchPosition = 0;
-       
-    for(var i=1; i < scores.length; i++){  
-      if(scores[i] <= scores[bestMatchPosition])
-      {
-        bestMatchPosition = i;
-      }
+            var currentComparison = 0;
+            for(var j=0; j < new_freind.scores.length; j++){
+              currentComparison += Math.abs( new_freind.scores[j] - friendsData[i].scores[j] );
+            }
+            scores.push(currentComparison);
+          }
+          var bestMatchPosition = 0;
+            
+          for(var i=1; i < scores.length; i++){  
+            if(scores[i] <= scores[bestMatchPosition])
+            {
+              bestMatchPosition = i;
+            }
     }
   
     var Best_match = friendsData[bestMatchPosition];

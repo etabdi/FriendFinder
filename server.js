@@ -1,28 +1,29 @@
-
-var express = require('express');
-var bodyParser = require('body-parser');
-var path = require('path');
+// sett up dependencies 
+var express = require("express");
+var bodyParser = require("body-parser");
+var path = require("path");
 var app = express();
-var PORT = process.env.PORT||8000;
 
 
-var apiRoutes = require('./app/routing/apiRoutes.js');
-var htmlRoutes = require('./app/routing/htmlRoutes.js');
+var PORT = process.env.PORT || 8000;
 
-app.use(express.static(path.join(__dirname, './app/public')));
+app.use(express.static("app/public"));
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
-app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
-require(path.join(__dirname, './app/routing/apiRoutes'));
-require(path.join(__dirname, './app/routing/htmlRoutes'));
 
-apiRoutes(app); 
-htmlRoutes(app);
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.text({type: "text/html"}));
+app.use(bodyParser.json({type: "application/*+json" }));
+app.use(bodyParser.raw({type: "application/vnd.custom-type"}));
 
-app.listen(PORT, function() {
-  console.log('FriendFinder app is listening on PORT: ' + PORT);
+
+require('./app/routing/apiRoutes.js')(app);
+require('./app/routing/htmlRoutes.js')(app);
+
+
+
+app.listen(PORT, function(){
+    console.log("Server listen on port: ", PORT);
 });
 
