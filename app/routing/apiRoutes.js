@@ -1,4 +1,3 @@
-console.log('API Route Connected Successfully');
 
 var friendsData = require('../data/friends.js');
 function apiRoutes(app) {
@@ -11,16 +10,18 @@ function apiRoutes(app) {
   app.post('/api/friends', function (req, res) {
 
    
-    var new_freind = {
+    module.exports = new_freind = {
       name: req.body.name,
       photo: req.body.photo,
       scores: []
     };
-    var scoresArray = [];
+    var scr_res = [];
     for(var i=0; i < req.body.scores.length; i++){
-      scoresArray.push( parseInt(req.body.scores[i]) )
+
+      scr_res.push( parseInt(req.body.scores[i]) )
+
     }
-    new_freind.scores = scoresArray;
+    new_freind.scores = scr_res;
 
     var scores = [];
     for(var i=0; i < friendsData.length; i++){
