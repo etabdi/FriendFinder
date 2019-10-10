@@ -10,7 +10,7 @@ function apiRoutes(app) {
   app.post('/api/friends', function (req, res) {
 
    
-    module.exports = new_freind = {
+ new_freind = {
             name: req.body.name,
             photo: req.body.photo,
             scores: []
@@ -48,5 +48,7 @@ function apiRoutes(app) {
   });
 
 }
+
+
 
 module.exports = apiRoutes;
